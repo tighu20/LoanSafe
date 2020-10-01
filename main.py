@@ -17,7 +17,7 @@ st.title('Loan Safe : ML powered Risk Assesment ')
 ordinal_columns = ["Loan Amount"]
 st.header("Loading Big ML Dataset...")
 
-raw_df=pd.read_csv("BigML_Dataset.csv")
+raw_df=pd.read_csv("BigML_Dataset1.csv")
 
 st.subheader("Dataset load Done!")
 

@@ -18,7 +18,7 @@ COPY embeddings.py /
 COPY requirements.txt /
 COPY deep_nn /deep_nn
 COPY plain_nn /plain_nn
-COPY BigML_Dataset.csv /
+COPY BigML_Dataset1.csv /
 COPY file1.csv /
 
 RUN apt-get update

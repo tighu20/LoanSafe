@@ -1,0 +1,19 @@
+import pandas
+import pickle
+import xgboost as xgb
+loaded_model = pickle.load(open('saved_models/xgboost.sav', 'rb'))
+
+
+
+
+x=pandas.read_csv("data/sample_df.csv")
+
+x.loc[0,"Loan Amount"]=200
+dtest = xgb.DMatrix(data = x)
+res=loaded_model.predict(dtest)[0]
+
+y= 1 if res>0.5 else 0
+
+print(y)
+
+

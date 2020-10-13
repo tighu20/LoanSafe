@@ -1,6 +1,0 @@
-streamlit
-pandas
-numpy==1.19.0
-keras
-sklearn
-tensorflow

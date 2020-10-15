@@ -1,6 +1,8 @@
 # LoanSafe
 A web application which can do real time risk assesment to help drive lending decisions.
 
+## Live application URL: http://35.226.165.34:8080/
+
 # Motivation
 LoanSafe is an application designed to help financial institutions conduct risk assesment on applicants who lack a credit history. It is streamlit web application
 contrainerized through Docker and deployed to a Kubernetes cluster through Google Cloud Platform and can make risk assesment in real time.LoanSafe provides a choice

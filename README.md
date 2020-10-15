@@ -47,3 +47,8 @@ docker run -p source_port:destination_port image_name:image_version
 
 I trained embeddings for the categorical variables through a non deep neural network and saved the embeddings in a .csv file which were later feeded to deep neural network to obtain better results. This embeddings could potentially be used to compare categorical variable through a metric like cosine similarity which otherwise wouldnt be possible.The "max length" defined for each categorical variable was 1 where the vocabulary size depended on number of unique values that a particular categorical variable can assume.
 
+## Comparision Metric
+
+To evaluate the performances of each model I have used Recall scores and below are the results obtained.
+
+![Scores](/images/model_scores.png)

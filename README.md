@@ -31,10 +31,11 @@ You can simply install the following into your virtual enviroment using pip.
 6. XGBoost
 7. Scikit Learn 
 
-## Docker is the recommend tool to have this streamlit application up and running on your local system. You can download the install from thier official website and follow the instructions there to have Docker running on your Desktop/Mac/Linux. You simply need to have a "requirments.txt" and a "Dockerfile"(no extension) in your source folder, and you can use the following two commands to build and run yor Docker image on localhost.
+## Containerzation
+Docker is the recommend tool to have this streamlit application up and running on your local system. You can download the install from thier official website and follow the instructions there to have Docker running on your Desktop/Mac/Linux. You simply need to have a "requirments.txt" and a "Dockerfile"(no extension) in your source folder, and you can use the following two commands to build and run yor Docker image on localhost.
 
-```docker build -t image_name:image_version -f Dockerfile .
-docker run -p source_port:destination_port image_name:image_version ```
+```docker build -t image_name:image_version -f Dockerfile . ```
+```docker run -p source_port:destination_port image_name:image_version ```
 
 
 

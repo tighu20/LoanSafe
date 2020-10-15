@@ -18,7 +18,7 @@ to user to choose from five machine learning models namely:
 
 # Tools/Packages
 
-You can simply install the following into your virtual enviroment using pip. eg-
+You can simply install the following into your virtual enviroment using pip.
 
 ``` pip install tensorflow ```
 

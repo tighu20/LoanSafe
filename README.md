@@ -17,6 +17,12 @@ to user to choose from five machine learning models namely:
 ![Pipeline](/images/data_pipeline.png)
 
 # Tools/Packages
+
+You can simply install the following into your virtual enviroment using pip. eg-
+
+``` pip install tensorflow ```
+
+
 1. Keras
 2. Tensorflow 2
 3. Python 3.7

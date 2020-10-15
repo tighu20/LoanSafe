@@ -2,7 +2,7 @@ from keras.layers import Dense, Input
 from keras.preprocessing.sequence import pad_sequences
 from keras.layers.embeddings import Embedding
 import numpy as np
-from keras.layers import BatchNormalization, LSTM
+from keras.layers import BatchNormalization
 from keras.utils.vis_utils import plot_model
 from keras.layers import Flatten
 from keras.models import Model
@@ -40,7 +40,7 @@ class One_Hot_Encoder(object):
 
 
 class embeddings_models(object):
-    """A functor that returns the trained model given the relevant inputs"""
+    
 
     def __init__(
             self,
@@ -164,22 +164,7 @@ class model_with_embeddings(object):
             inputs=embedding_inputs + ordinal_inputs, outputs=output
         )
 
-        # print(self.merged_model.summary())
-        # if not quiet:
-        #     if len(pretrained_embeddings) == 0:
-        #         plot_model(
-        #             self.merged_model,
-        #             to_file="train_embeddings.png",
-        #             show_shapes=True,
-        #             show_layer_names=True,
-        #         )
-        #     else:
-        #         plot_model(
-        #             self.merged_model,
-        #             to_file="pretrained_embeddings.png",
-        #             show_shapes=True,
-        #             show_layer_names=True,
-        #         )
+       
 
     def train(self, train_input_data, train_labels, _epochs, _batch_size):
         """compiles the model, fits the _input_data to the _labels, and evaluates the accuracy
@@ -234,6 +219,5 @@ class model_with_embeddings(object):
         weight_layer = (self.merged_model).get_layer(name)
         weights = weight_layer.get_weights()[0]
 
-        # Normalize
-        # weights = weights / np.linalg.norm(weights, axis = 1).reshape((-1, 1))
+
         return weights

@@ -80,14 +80,14 @@ useful_columns = [
     "Sector",
     "Activity",
     "Status",
-    "Local Currency",
+    
 ]
 
 categorical_columns = [
     "Country",
     "Sector",
     "Activity",
-    "Local Currency",
+   
 ]
 
 ordinal_columns = ["Loan Amount"]

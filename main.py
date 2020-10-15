@@ -19,11 +19,13 @@ ordinal_columns = ["Loan Amount"]
 
 
 @st.cache
+#streamlit cached funtion to load ds into web app
 def load_ds():
     rdf = pd.read_csv("data/BigML_Dataset.csv")
     st.header('Raw Dataset')
     return rdf
 
+#funtion to load sidebar which contains all the features that the lending institution will input to get risk assesment
 def load_sidebar(raw_df):
     arg0 = st.sidebar.selectbox('Which ML Model would you like to run?', models)
     arg1 = st.sidebar.slider("Please Select the Loan Amount", 100, 2000)
@@ -36,10 +38,12 @@ def load_sidebar(raw_df):
 
     return [arg0, arg1, arg2, arg3, arg4, arg5], [b1, b2]
 
+# to load saved machine learning models using pickle from saved models directory
 def fetch_model(model_name):
     loaded_model = pickle.load(open('saved_models/'+model_name+'.sav', 'rb'))
     return loaded_model
 
+# get a empty sample_df which can be fitted with all the input values  
 def get_sampledf(args):
     input_df = pd.read_csv("data/sample_df.csv")
     ColNameList = ["Country_"+args[2],"Local Currency_"+args[5],"Activity_"+args[3],"Sector_"+args[4]]
@@ -48,6 +52,7 @@ def get_sampledf(args):
 
     return input_df
 
+# load images on the application based on the result of the selected machine learning model
 def show_risk_image(result):
     if int(result) == 0:
         st.image(low_risk_image, caption='Default Risk', use_column_width=True)
@@ -71,6 +76,9 @@ st.dataframe(raw_df.head(10))
 arguments, buttons = load_sidebar(raw_df)
 
 max_length = 1
+
+# if conditional tree to drive code based on buttons clicked on the streamlit web application which calls the above defined funtions to make predictions 
+# using the machine learning model
 
 if buttons[0] and arguments[0] == "Neural Network":
     st.subheader("Fetching Neural Network Model")

@@ -14,7 +14,6 @@ to user to choose from five machine learning models namely:
 
 # Data Pipeline
 
-This is what the data pipe looks like-
 ![Pipeline](/images/data_pipeline.png)
 
 # Tools/Packages

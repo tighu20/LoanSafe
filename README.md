@@ -1,6 +1,8 @@
 # LoanSafe
 A web application which can do real time risk assesment to help drive lending decisions.
 
+
+## Companies collaborating with insight, please make sure you use below URL to access the web application(The link on packets you recieved may be obselte.)
 ## Live application URL: http://35.226.165.34:8080/
 
 # Motivation

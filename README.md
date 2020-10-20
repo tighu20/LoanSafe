@@ -53,6 +53,24 @@ I trained embeddings for the categorical variables through a non deep neural net
 
 ## Comparision Metric
 
-To evaluate the performances of each model I have used Recall scores and below are the results obtained.
+To evaluate the performances of each model I have used Recall scores and below are the results obtained.The reason I chose this metric is because I looked at this problem from the point of view of the financial institutions
+and maximising the recall score would enable them to identify applicants who default to a great extent which would help these institutions greatly.Some other possible route to take would be to work on precision or f1 scores,
+it essentially would all depend on who your potential users will be and what they want most from this application.
+
+XGBoost performed the best in terms of recall scores with Neural Networks in close second and way ahead of models like random forrest and logistic regression.One reason for boosting approach(XGBoost) 
+greatly outperforming the bagging approach(Random Forrest) was due to the fact like bagging approaches tend to do well when there is a clear case of overfitting happening with your models and having numerous 
+sub sampled datasets helps greatly in reducing the variance and in effect the overfitting but as this was not the case here with the ML models and rather it was a case of underfitting(generally speaking)
+the boosting approach fared very well.
 
 ![Scores](/images/model_scores.png)
+
+## Refrences
+
+1. Word embeddings. (n.d.). Retrieved October 20, 2020, from Tensorflow.org website: https://www.tensorflow.org/tutorials/text/word_embeddings
+
+2. Tzoufras, M. (n.d.). LendingAtlas.
+
+3 .Faircloth, B. (2019, November 6). The risks and management of algorithmic bias in fair lending. Retrieved October 20, 2020, from Wolterskluwer.com website: https://www.wolterskluwer.com/en/expert-insights/the-risks-and-management-of-algorithmic-bias-in-fair-lending
+
+4. Klein, A. (2020, July 10). Reducing bias in AI-based financial services. Retrieved October 20, 2020, from Brookings website: https://www.brookings.edu/research/reducing-bias-in-ai-based-financial-services/
+

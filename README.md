@@ -66,11 +66,11 @@ the boosting approach fared very well.
 
 ## Refrences
 
-Word embeddings. (n.d.). Retrieved October 20, 2020, from Tensorflow.org website: https://www.tensorflow.org/tutorials/text/word_embeddings
+1. Word embeddings. (n.d.). Retrieved October 20, 2020, from Tensorflow.org website: https://www.tensorflow.org/tutorials/text/word_embeddings
 
-Tzoufras, M. (n.d.). LendingAtlas.
+2. Tzoufras, M. (n.d.). LendingAtlas.
 
-Faircloth, B. (2019, November 6). The risks and management of algorithmic bias in fair lending. Retrieved October 20, 2020, from Wolterskluwer.com website: https://www.wolterskluwer.com/en/expert-insights/the-risks-and-management-of-algorithmic-bias-in-fair-lending
+3. Faircloth, B. (2019, November 6). The risks and management of algorithmic bias in fair lending. Retrieved October 20, 2020, from Wolterskluwer.com website: https://www.wolterskluwer.com/en/expert-insights/the-risks-and-management-of-algorithmic-bias-in-fair-lending
 
-Klein, A. (2020, July 10). Reducing bias in AI-based financial services. Retrieved October 20, 2020, from Brookings website: https://www.brookings.edu/research/reducing-bias-in-ai-based-financial-services/
+4. Klein, A. (2020, July 10). Reducing bias in AI-based financial services. Retrieved October 20, 2020, from Brookings website: https://www.brookings.edu/research/reducing-bias-in-ai-based-financial-services/
 

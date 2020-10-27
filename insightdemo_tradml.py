@@ -53,14 +53,14 @@ param = {'max_depth':6,
          'silent':1,
          'objective':'binary:logistic',
          'eval_metric': 'auc',
-          #'gamma': 10,
-          #'lambda': 10,
-          #'alpha': 20,
-          #'subsample' : 0.8,
-          #'min_child_weight': 5,
-          #'colsample_bytree' :0.79,
-          #,'colsample_bynode' : 0.6
-          #,'colsample_bylevel':0.7
+          'gamma': 10,
+          'lambda': 10,
+          'alpha': 20,
+          'subsample' : 0.8,
+          'min_child_weight': 5,
+          'colsample_bytree' :0.79,
+          ,'colsample_bynode' : 0.6
+          ,'colsample_bylevel':0.7
           #,'scale_pos_weight' : 0.276,
           'maximize' : 'FALSE'
         ,'n_jobs' : -1
